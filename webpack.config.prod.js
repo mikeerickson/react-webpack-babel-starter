@@ -1,3 +1,5 @@
+/* global require, module, __dirname */
+
 // production config
 const merge     = require('webpack-merge');
 const webpack   = require('webpack');

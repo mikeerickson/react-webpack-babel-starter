@@ -1,4 +1,6 @@
 // development config
+/* global require, module */
+
 const merge     = require('webpack-merge');
 const webpack   = require('webpack');
 const {resolve} = require('path');

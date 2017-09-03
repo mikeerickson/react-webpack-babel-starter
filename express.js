@@ -1,4 +1,7 @@
+/*global require */
+
 const express    = require('express');
+const chalk      = require('chalk');
 const app        = express();
 const portNumber = 3000;
 const sourceDir  = 'dist';

@@ -1,9 +1,11 @@
-import React from "react";
-import ReactDOM from 'react-dom';
-import {AppContainer} from "react-hot-loader";
-import App from "./components/App";
+/*global require, module */
 
-const rootEl = document.getElementById("root");
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import {AppContainer} from 'react-hot-loader';
+import App from './components/App';
+
+const rootEl = document.getElementById('root');
 
 const renderComponent = (Component) => {
     ReactDOM.render(
@@ -18,8 +20,8 @@ renderComponent(App);
 
 // Hot Module Replacement API
 if (module.hot) {
-    module.hot.accept("./components/App", () => {
-        const NewApp = require("./components/App").default;
+    module.hot.accept('./components/App', () => {
+        const NewApp = require('./components/App').default;
         renderComponent(NewApp);
     });
 }

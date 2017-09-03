@@ -11,25 +11,17 @@
     "starter",
     "boilerplate"
   ],
-  "author": "Viktor Persson",
+  "author": "Mike Erickson <merickson@mfour.com>",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vikpe/react-webpack-babel-starter.git"
-  },
-  "bugs": {
-    "url": "https://github.com/vikpe/react-webpack-babel-starter/issues"
-  },
-  "homepage": "https://github.com/vikpe/react-webpack-babel-starter",
   "scripts": {
     "build": "webpack -p --env=prod",
     "lint": "npm run lint:js && npm run lint:sass",
-    "lint:js": "jshint",
-    "lint:sass": "stylelint ./src/**/*.scss",
+    "lint:js": "eslint \"./src/**/*.js\"",
+    "lint:sass": "sass-lint -c .sass-lint.yml \"./src/**/*.sass\" -v -q || true",
     "start": "npm run start-dev",
     "start-dev": "webpack-dev-server --config=webpack.config.dev.js",
     "start-prod": "npm run build && node express.js",
-    "test": "jest --watch --coverage"
+    "test": "jest --coverage"
   },
   "devDependencies": {
     "babel": "^6.23.0",

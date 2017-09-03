@@ -1,7 +1,8 @@
+/* global require, module */
+
 // shared config (dev and prod)
 const webpack         = require('webpack');
 const {resolve}       = require('path');
-const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
   resolve: {
@@ -36,9 +37,6 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new StyleLintPlugin(),
-  ],
   externals: {
     'react': 'React',
     'react-dom': 'ReactDOM',
