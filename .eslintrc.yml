@@ -10,9 +10,12 @@ parserOptions:
 plugins:
   - react
 rules:
+  no-undef: 0
+  no-unused-vars: 0
+  no-console: 0
   indent:
     - error
-    - 4
+    - 2
   linebreak-style:
     - error
     - unix
