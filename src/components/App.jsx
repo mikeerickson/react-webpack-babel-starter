@@ -1,12 +1,10 @@
-<<<<<<< HEAD
 /*global require */
 
 import React, {Component} from 'react';
-import React from 'react';
+
 require('!style-loader!css-loader!sass-loader!./App.scss');
 
 const reactLogo = require('./react_logo.svg');
-
 
 class App extends React.Component {
   render() {

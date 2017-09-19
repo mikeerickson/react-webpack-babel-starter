@@ -21,7 +21,8 @@
     "start": "npm run start-dev",
     "start-dev": "webpack-dev-server --config=webpack.config.dev.js",
     "start-prod": "npm run build && node express.js",
-    "test": "jest --coverage"
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   },
   "devDependencies": {
     "babel": "^6.23.0",
@@ -36,13 +37,8 @@
     "express": "^4.15.4",
     "file-loader": "^0.11.2",
     "identity-obj-proxy": "^3.0.0",
-<<<<<<< HEAD
-    "image-webpack-loader": "^3.3.1",
-    "jest": "^20.1.0-alpha.3",
-=======
     "image-webpack-loader": "^3.4.2",
     "jest": "^21.1.0",
->>>>>>> 86e515cf235ead7b6ac88469b36fab078e640ee8
     "jshint": "^2.9.5",
     "node-sass": "^4.5.3",
     "postcss-loader": "^2.0.6",
